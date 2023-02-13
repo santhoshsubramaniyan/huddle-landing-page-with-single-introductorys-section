@@ -22,21 +22,111 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
-  background-color: var(--clr-white);
+  background-image: url("../images/bg-mobile.svg");
+  background-color: var(--clr-violet);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+
+  width: 90%;
+  margin: auto;
 }
 
-@media screen and (min-width: 375px) {
+.logo-container {
+  margin: 2rem 0;
 }
 
-@media screen and (min-width: 425px) {
+.logo {
+  width: 140px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.tittle {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: var(--ff-poppins);
+}
+
+.description {
+  font-family: var(--ff-open-sans);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  width: 80%;
+  padding: 0.5rem;
+  background: var(--clr-white);
+  border: 2px soild var(--clr-white);
+  border-radius: 25px;
+  font-size: 1.15rem;
+  font-family: var(--ff-open-sans);
+  color: var(--clr-violet);
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  margin: 0.5rem auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon .icon {
+  color: var(--clr-white);
+  background: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 2px solid var(--clr-white);
+  border-radius: 50%;
+  margin: 0 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
-}
+  body {
+    background-image: url("../images/bg-desktop.svg");
+  }
 
-@media screen and (min-width: 991px) {
-}
+  .header {
+    flex-direction: row;
+    gap: 2rem;
+    text-align: start;
+    padding: 0;
+  }
 
-@media screen and (min-width: 1024px) {
+  .btn {
+    width: auto;
+    padding: 0.5rem 2.75rem;
+  }
+
+  .footer {
+    width: 100%;
+    justify-content: flex-end;
+    margin: auto;
+  }
 }
