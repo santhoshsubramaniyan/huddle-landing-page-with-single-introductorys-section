@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
 *,
 *::after,
 *::before {
@@ -9,6 +11,10 @@
 :root {
   --clr-black: #333333;
   --clr-white: #f3f3f3;
+  --ff-open-sans: "Open Sans", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+  --clr-violet: hsl(257, 40%, 49%);
+  --clr-magenta: hsl(300, 69%, 71%);
 }
 
 html {
